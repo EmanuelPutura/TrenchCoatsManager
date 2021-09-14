@@ -2,10 +2,16 @@
  A trench coats manager application, providing two application modes: admin and user mode. The user can also add trench coats to a shopping basket which is stored externally.
  
  
+ ## Several Used Design Patterns
+ - Model-View-Controller design pattern for showing the database data in the table, together with custom QT delegates for showing the trench coats photos in the table
+ - Abstract Factory design pattern
+ - Command design pattern, for the undo/redo functionality, where a list of operations is maintained (each function and its arguments are saved) and in case of an undo or redo operation an object respecting the interface *IFunctionCall* calls the corresponding function
+ 
+ 
  ## Used Concepts and Several Application Features 
  - Graphical User Interface, built using the ```QT Framework```
  - Layered Architecture: ```presentation layer``` (the UI), ```business layer``` (application service), ```persistence layer``` (application repositories)
- - Usage of important OOP concepts, such as: ```abstraction```, ```inheritance```, ```encapsulation``` and ```polymorphism```. One such example of ```inheritance``` and ```polymorphism``` usage: in the application's persistance layer, I've defined the abstract templated class *AbstractLaunchRepository*, which has all its methods ```pure virtual``` and inherits from the *Repository* templated class. *AbstractLaunchRepository* class is used for storing the user's shopping basket, which can be either in ```CSV``` or ```HTML``` format. Hence, I've defined two more classes which both inherit from *AbstractLaunchRepository* class and which both implement the methods of the parent class: *CSVRepository* and *HTMLRepository*. Because the decision of which format to be used is taken dynamically, depending of the user's choice, the application's service maintains a pointer to an *AbstractLaunchRepository* object, which will actually hold the address of a *CSVRepository* object or of a *HTMLRepository* object, depending on the user's choice - ```polymorphism```.
+ - Usage of important OOP concepts, such as: ```abstraction```, ```inheritance```, ```encapsulation``` and ```polymorphism```. One such example of ```inheritance``` and ```polymorphism``` usage: in the application's persistance layer, I've defined the abstract templated class *AbstractLaunchRepository*, which has all its methods ```pure virtual``` and inherits from the *Repository* templated class. *AbstractLaunchRepository* class is used for storing the user's shopping basket, which can be either in ```CSV``` or ```HTML``` format. Hence, I've defined two more classes which both inherit from *AbstractLaunchRepository* class and which both implement the methods of the parent class: *CSVRepository* and *HTMLRepository*. Because the decision of which format to be used is taken dynamically, depending of the user's choice, the application's service maintains a pointer to an *AbstractLaunchRepository* object, which will actually hold the address of a *CSVRepository* object or of a *HTMLRepository* object, depending on the user's choice - ```polymorphism```. See the whole program's structure by checking its UML diagram (*UML_diagram.mdj file*)
  - Usage of QT signals and slots
  
  
