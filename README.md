@@ -1,12 +1,6 @@
 # TrenchCoatsManager
  A trench coats manager application, providing two application modes: admin and user mode. The user can also add trench coats to a shopping basket which is stored externally.
- 
- 
- ## Several Used Design Patterns
- - Model-View-Controller design pattern for showing the database data in the table, together with custom QT delegates for showing the trench coats photos in the table
- - Abstract Factory design pattern
- - Command design pattern, for the undo/redo functionality, where a list of operations is maintained (each function and its arguments are saved) and in case of an undo or redo operation an object respecting the interface *IFunctionCall* calls the corresponding function
- 
+  
  
  ## Used Concepts and Several Application Features 
  - Graphical User Interface, built using the ```QT Framework```
@@ -15,6 +9,12 @@
  - Usage of QT signals and slots
  
  
+ ## Several Design Patterns That Were Used
+ - Model-View-Controller design pattern for showing the database data in the table, together with custom QT delegates for showing the trench coats photos in the table
+ - Abstract Factory design pattern
+ - Command design pattern, for the undo/redo functionality, where a list of operations is maintained (each function and its arguments are saved) and in case of an undo or redo operation an object respecting the interface *IFunctionCall* calls the corresponding function
+
+
  ## Other Application Features
  - a window lets the user choose the application mode (```user``` or ```admin``` mode). Also, the user is allowed to ```change``` the type of file (between ```CSV``` and ```HTML```) where the shopping basket is displayed (providing the user enters user mode and adds something to the basket)
  - multiple undo/redo functionality for the add, remove, update operations and for all the features related to the shopping basket (e.g., adding a product to the shopping basket)
