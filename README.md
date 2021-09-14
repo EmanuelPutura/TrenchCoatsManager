@@ -2,7 +2,15 @@
  A trench coats manager application, providing two application modes: admin and user mode. The user can also add trench coats to a shopping basket which is stored externally.
  
  
- ## Features
+ ## Used Concepts and Several Application Features 
+ - Graphical User Interface, built using the ```QT Framework```
+ - Layered Architecture: ```presentation layer``` (the UI), ```business layer``` (application service), ```persistence layer``` (application repositories)
+ - Usage of important OOP concepts, such as: abstraction, inheritance, encapsulation and polymorphism
+        -- one such example of ```inheritance``` and ```polymorphism``` usage: in the application's persistance layer, I've defined the abstract templated class *AbstractLaunchRepository*, which has all its methods ```pure virtual``` and inherits from the *Repository* templated class. *AbstractLaunchRepository* class is used for storing the user's shopping basket, which can be either in ```CSV``` or ```HTML``` format. Hence, I've defined two more classes which both inherit from *AbstractLaunchRepository* class and which both implement the methods of the parent class: *CSVRepository* and *HTMLRepository*. Because the decision of which format to be used is taken dynamically, depending of the user's choice, the application's service maintains a pointer to an *AbstractLaunchRepository* object, which will actually hold the address of a *CSVRepository* object or of a *HTMLRepository* object, depending on the user's choice - ```polymorphism```.
+ - Usage of QT signals and slots
+ 
+ 
+ ## Other Application Features
  - a window lets the user choose the application mode (```user``` or ```admin``` mode). Also, the user is allowed to ```change``` the type of file (between ```CSV``` and ```HTML```) where the shopping basket is displayed (providing the user enters user mode and adds something to the basket)
  - multiple undo/redo functionality for the add, remove, update operations and for all the features related to the shopping basket (e.g., adding a product to the shopping basket)
  - key combinations for the undo/redo functionality (```Ctrl-Z``` and ```Ctrl-Y```) 
