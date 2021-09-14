@@ -4,22 +4,22 @@
 
 #include "HTMLCoatsRepository.h"
 
-void HTMLCoatsRepository::add(const TrenchCoat &element) {
+void HTMLRepository::add(const TrenchCoat &element) {
     Repository<TrenchCoat>::add(element);
     writeToFile();
 }
 
-void HTMLCoatsRepository::remove(const TrenchCoat &element) {
+void HTMLRepository::remove(const TrenchCoat &element) {
     Repository<TrenchCoat>::remove(element);
     writeToFile();
 }
 
-void HTMLCoatsRepository::update(const TrenchCoat &element, const TrenchCoat &new_element) {
+void HTMLRepository::update(const TrenchCoat &element, const TrenchCoat &new_element) {
     Repository<TrenchCoat>::update(element, new_element);
     writeToFile();
 }
 
-void HTMLCoatsRepository::writeToFile() const {
+void HTMLRepository::writeToFile() const {
     if (this->file_path == "") return;
     std::ofstream fout(this->file_path);
     if (fout.is_open()) {

@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
     Repository<UndoRedoFunction*> undo_redo_repository;
 
     CSVRepository<TrenchCoat> shopping_basket_csv("../TrenchCoats/files/shopping_basket.csv");
-    HTMLCoatsRepository shopping_basket_html("../TrenchCoats/files/shopping_basket.html");
+    HTMLRepository shopping_basket_html("../TrenchCoats/files/shopping_basket.html");
 
     GuiOptionWindow option_window;
     option_window.show();

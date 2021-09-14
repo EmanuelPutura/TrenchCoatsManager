@@ -11,9 +11,9 @@
 #include <fstream>
 #include <sstream>
 
-class HTMLCoatsRepository : public AbstractLaunchRepository<TrenchCoat> {
+class HTMLRepository : public AbstractLaunchRepository<TrenchCoat> {
 public:
-    explicit HTMLCoatsRepository(const std::string& file_path = "") : AbstractLaunchRepository<TrenchCoat>(file_path) {
+    explicit HTMLRepository(const std::string& file_path = "") : AbstractLaunchRepository<TrenchCoat>(file_path) {
         writeToFile();
     }
 
