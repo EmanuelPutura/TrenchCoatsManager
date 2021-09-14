@@ -16,7 +16,12 @@
  - switch to user mode
 
  ### User mode features:
- -
+ - display button: see the trench coats in the database, having a given size, one by one. If the size is empty, then all the trench coats will be considered. When the user chooses this option, the data of the first trench coat (size, colour, price, quantity) is displayed, along with its photograph
+ - the trench coat's photograph is displayed by launching a browser and opening the trench coat's link
+ - the user can choose to add the trench to the shopping basket. In this case, the price is added to the total sum the user has to pay. The total sum will be shown after each purchase. Also, the quantity of the added trench coat (how many trench coats of that type are in the database) will decrease
+ - choose not to add the trench coat to the basket and to continue to the next. In this case, the information corresponding to the next trench coat is shown and the user is again offered the possibility to buy it. This can continue as long as the user wants, as when arriving to the end of the list, if the user chooses next, the application will again show the first trench coat
+ - show shopping basket button: display the shopping basket in a table
+ - show shopping basket externally button: display the shopping basket in a ```CSV``` or ```HTML``` format, depending on the user's choice
 
  ## More Screenshots
 Choose the application mode window:
