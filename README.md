@@ -24,20 +24,20 @@
  - show shopping basket externally button: display the shopping basket in a ```CSV``` or ```HTML``` format, depending on the user's choice
 
  ## Project Screenshots
-Choose the application mode window:
-<p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/choose_mode.png" height="500"/> </p>
+ ### Choose the application mode window:
+ <p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/choose_mode.png" height="500"/> </p>
  
-Admin mode window:
-<p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/admin_mode.png" height="500"/> </p>
+ ### Admin mode window:
+ <p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/admin_mode.png" height="500"/> </p>
  
-User mode window:
-<p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/user_mode.png" height="500"/> </p>
+ ### User mode window:
+ <p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/user_mode.png" height="500"/> </p>
  
-Size statistics:
-<p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/statistics.png" height="500"/> </p>
+ ### Size statistics:
+ <p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/statistics.png" height="500"/> </p>
 
-Shopping basket displayed in a table:
-<p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/show_basket.png" height="500"/> </p>
+ ### Shopping basket displayed in a table:
+ <p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/show_basket.png" height="500"/> </p>
 
-Shopping basket displayed externally, in ```HTML``` format in this case:
-<p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/show_basket_externally.png" height="500"/> </p>
+ ### Shopping basket displayed externally, in ```HTML``` format in this case:
+ <p align="center"> <img src="https://github.com/EmanuelPutura/TrenchCoatsManager/blob/main/img/show_basket_externally.png" height="500"/> </p>
