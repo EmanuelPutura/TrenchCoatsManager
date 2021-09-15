@@ -4,7 +4,7 @@
  
  ## Used Concepts and Several Application Features 
  - Graphical User Interface, built using the ```QT Framework```
- - Layered Architecture: ```presentation layer``` (the UI), ```business layer``` (application service), ```persistence layer``` (application repositories)
+ - Layered Architecture: ```presentation layer``` (application UI), ```business layer``` (application service), ```persistence layer``` (application repositories)
  - Usage of important OOP concepts, such as: ```abstraction```, ```inheritance```, ```encapsulation``` and ```polymorphism```. One such example of ```inheritance``` and ```polymorphism``` usage: in the application's persistance layer, I've defined the abstract templated class *AbstractLaunchRepository*, which has all its methods ```pure virtual``` and inherits from the *Repository* templated class. *AbstractLaunchRepository* class is used for storing the user's shopping basket, which can be either in ```CSV``` or ```HTML``` format. Hence, I've defined two more classes which both inherit from *AbstractLaunchRepository* class and which both implement the methods of the parent class: *CSVRepository* and *HTMLRepository*. Because the decision of which format to be used is taken dynamically, depending of the user's choice, the application's service maintains a pointer to an *AbstractLaunchRepository* object, which will actually hold the address of a *CSVRepository* object or of a *HTMLRepository* object, depending on the user's choice - ```polymorphism```. See the whole program's structure by checking its ```UML diagram``` (*UML_diagram.mdj file*)
  - Usage of QT signals and slots
  
