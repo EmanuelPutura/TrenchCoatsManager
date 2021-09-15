@@ -10,9 +10,9 @@
  
  
  ## Several Design Patterns That Were Used
- - Model-View-Controller design pattern for showing the database data in the table, together with custom QT delegates for showing the trench coats photos in the table
- - Abstract Factory design pattern
- - Command design pattern, for the undo/redo functionality, where a list of operations is maintained (each function and its arguments are saved) and in case of an undo or redo operation an object respecting the interface *IFunctionCall* calls the corresponding function
+ - ```Model-View-Controller``` design pattern for showing the database data in the table, together with custom QT delegates for showing the trench coats photos in the table
+ - ```Abstract Factory``` design pattern
+ - ```Command``` design pattern, for the undo/redo functionality, where a list of operations is maintained (each function and its arguments are saved) and in case of an undo or redo operation an object respecting the interface *IFunctionCall* calls the corresponding function
 
 
  ## Other Application Features
